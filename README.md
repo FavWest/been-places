@@ -27,9 +27,30 @@
 
 ## Specifications
 
-Describe:
-Test:
-Code:
+Describe: A function to add a new place into the object titled Destination
+Test: Create place using place constructor
+Code: function place(location, landmark, season, notes){}
+Expected Output: 
+italy: {
+  location: Florence, Italy
+  landmark: Duomo
+  season: Summer
+  notes: These are notes.
+
+
+Test: Pass properties into Destination constructor
+Code: Destination.prototype.addPlace(italy)
+Expected Output: 
+Destination {
+italy: {
+  location: Florence, Italy
+  landmark: Duomo
+  season: Summer
+  notes: These are notes.
+}}
+
+Test: 
+Code: 
 Expected Output:
 
 ## Known Bugs
