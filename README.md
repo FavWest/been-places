@@ -39,15 +39,18 @@ italy: {
 
 
 Test: Pass properties into Destination constructor
-Code: Destination.prototype.addPlace(italy)
+Code: 
+let destination = new Destination();
+let italy = new place("Italy", "Duomo", "Summer", "These are notes");
+destination.addPlace(italy);
+console.log(destination.places.Italy);
 Expected Output: 
-Destination {
-italy: {
-  location: Florence, Italy
-  landmark: Duomo
-  season: Summer
-  notes: These are notes.
-}}
+place {location: "Italy", landmark: "Duomo", season: "Summer", notes: "These are notes"}
+landmark: "Duomo"
+location: "Italy"
+notes: "These are notes"
+season: "Summer"
+__proto__: Object
 
 Test: 
 Code: 

@@ -1,11 +1,12 @@
 // Business Logic
 
 function Destination() {
-  let places = {};
+  this.places = {};
 }
 
 Destination.prototype.addPlace = function(place){
-  this.place.location = place;
+  console.log(place.location);
+  this.places[place.location] = place;
 }
 
 function place(location, landmark, season, notes){
@@ -14,3 +15,8 @@ function place(location, landmark, season, notes){
   this.season = season;
   this.notes = notes;
 }
+
+let destination = new Destination();
+let italy = new place("Italy", "Duomo", "Summer", "These are notes");
+destination.addPlace(italy);
+console.log(destination.places.Italy);
