@@ -2,7 +2,7 @@
 
 #### _Place You've Been created by John Edmondson_
 
-#### By _**John Edmondson**_
+#### By _**John Edmondson & Tori West**_
 
 ## Technologies Used
 
@@ -45,3 +45,4 @@ _THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPL
 ## Contact Information
 
 John Edmondson edmondsonj@gmail.com
+Tori West Victoria_west@ymail.com
