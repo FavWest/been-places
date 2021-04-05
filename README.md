@@ -52,9 +52,16 @@ notes: "These are notes"
 season: "Summer"
 __proto__: Object
 
-Test: 
+Describe: formatPlaceString();
+Test: "It should return a formatted string of keys and values"
 Code: 
-Expected Output:
+let italy = new place("Italy", "Duomo", "Summer", "These are notes");
+console.log(italy.formatPlaceString());
+Expected Output: 
+country Italy
+landmark Duomo
+season Summer
+notes These are notes
 
 ## Known Bugs
 

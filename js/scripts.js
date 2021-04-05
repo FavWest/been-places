@@ -5,18 +5,27 @@ function Destination() {
 }
 
 Destination.prototype.addPlace = function(place){
-  console.log(place.location);
-  this.places[place.location] = place;
+  this.places[place.country] = place;
 }
 
-function place(location, landmark, season, notes){
-  this.location = location;
+function place(country, landmark, season, notes){
+  this.country = country;
   this.landmark = landmark;
   this.season = season;
   this.notes = notes;
 }
 
+place.prototype.formatPlaceString = function() {
+  let descriptiveString = "";
+  for (const key in this){
+    if (this.hasOwnProperty(key)){
+      descriptiveString += key + " " + this[key] + "\n";
+    }   
+  };
+  return descriptiveString;
+}
 let destination = new Destination();
 let italy = new place("Italy", "Duomo", "Summer", "These are notes");
 destination.addPlace(italy);
-console.log(destination.places.Italy);
+console.log(italy.formatPlaceString());
+
